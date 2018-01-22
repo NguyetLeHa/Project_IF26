@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="fr.utt.if26.projetif26.AccueilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bChest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chest" />
+
+            <Button
+                android:id="@+id/bBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/bBiceps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biceps" />
+
+            <Button
+                android:id="@+id/bTriceps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Triceps" />
+
+            <Button
+                android:id="@+id/bShoulder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoulder" />
+
+            <Button
+                android:id="@+id/bLeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leg" />
+
+            <Button
+                android:id="@+id/abs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABS" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
