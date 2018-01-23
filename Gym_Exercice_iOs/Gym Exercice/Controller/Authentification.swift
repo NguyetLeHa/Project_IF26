@@ -36,6 +36,7 @@ class Authentification: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.passwordLabel.isSecureTextEntry = true
+        self.navigationController?.isNavigationBarHidden = true
         do{
             
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -58,13 +59,13 @@ class Authentification: UIViewController {
     
 
     func createTable() {
-       do{
+     /*  do{
          try  self.database.run(self.userTable.drop())
          }
          catch{
          print("error created")
          }
-        
+        */
         let createTable = self.userTable.create(ifNotExists: true) { (table) in
             table.column(id, primaryKey: true)
             table.column(name, unique : true)

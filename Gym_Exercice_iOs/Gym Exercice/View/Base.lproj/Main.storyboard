@@ -170,7 +170,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Guide Gym"/>
                                 <connections>
-                                    <action selector="GuideGym" destination="PBe-DF-gBM" eventType="touchUpInside" id="M4h-sK-zLP"/>
+                                    <segue destination="Kh7-CS-QWl" kind="show" id="BCi-5G-yjH"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vf-vc-Bgc">
@@ -230,6 +230,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j97-LJ-L6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="209" y="985"/>
+        </scene>
+        <!--Guide Gym-->
+        <scene sceneID="ZPn-By-xG0">
+            <objects>
+                <tableViewController id="Kh7-CS-QWl" customClass="GuideGym" customModule="Gym_Exercice" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sog-ta-Ebs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celluleExercice" id="XDq-5x-l4d">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XDq-5x-l4d" id="xER-dx-rsm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kh7-CS-QWl" id="pM3-Y1-6EE"/>
+                            <outlet property="delegate" destination="Kh7-CS-QWl" id="sPJ-fe-kyf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2G-VB-z48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="1898"/>
         </scene>
         <!--Form Fill Info-->
         <scene sceneID="hds-Rw-yBn">

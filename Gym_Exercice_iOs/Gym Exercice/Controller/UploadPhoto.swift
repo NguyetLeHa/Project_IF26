@@ -17,6 +17,7 @@ UINavigationControllerDelegate {
 
     @IBOutlet weak var ImageAva: UIImageView!
     override func viewDidLoad() {
+        self.navigationController?.isNavigationBarHidden = false
         super.viewDidLoad()
         ImageAva.image = theImagePassed
         

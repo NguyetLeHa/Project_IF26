@@ -50,7 +50,7 @@ class FormFillInfo: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.isNavigationBarHidden = false
         pickerView.delegate = self
         pickerView.dataSource = self
 
@@ -104,7 +104,6 @@ class FormFillInfo: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.userGenre = row
-        print ("selected \(row)")
     }
     
     
@@ -149,8 +148,6 @@ class FormFillInfo: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate
     }
     
     func getInfoUser (){
-       
-            
         
             do{
                 let user = try self.database.prepare("select * from userTable ")
